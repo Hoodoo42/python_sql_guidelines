@@ -9,4 +9,4 @@ def choose_rooms():
 
 def choose_city():
     city = input('how many rooms ')
-    results = dbh.execute_statement('CALL room_check(?)', [city])
+    results = dbh.execute_statement('CALL city_check(?)', [city])
